@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+  --primary-text-color: #183b56;
+  --secondary-text-color: #577592;
+  --accent-color: #2294ed;
+  --accent-color-dark: #1d69a3;
+  --padding-inline-section: 20px;
+}
+
+body{
+    color: var(--primary-text-color);
+    font-family: 'poppins', sans-serif;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+p{
+    font-size: 1.25rem;
+    font-family: 'Roboto',sans-serif;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul{
+    list-style: none;
+}
+
+.primary-button{
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    color: white !important;
+    font-weight: 700;
+    padding: 11px 25px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.2s ease-in-out;
+}
+
+.primary-button:hover{
+    background-color: var(--accent-color-dark);
+}
+
+.secondary-button{
+    border: 0.5px solid var(--secondary-text-color);
+    border-radius: 6px;
+    font-weight: 700;
+    padding: 11px 25px;
+    transition: 0.2s ease-in-out;
+    color: var(--primary-text-color) !important;
+}
+
+.secondary-button:hover{
+    border-color: var(--accent-color);
+    color: var(--accent-color) !important;
+
+}
+
+.hover-link{
+    color: var(--primary-text-color);
+}
+
+.hover-link:hover{
+    color: var(--accent-color);
+    transition: all ease-in-out 0.5s;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.small-bold-text{
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.container{
+    max-width: 85vw;
+    margin: auto;
+    padding-inline:var(--padding-inline-section) ;
+}
+
+.top-banner{
+    background-color: #4fb3d4;
+}
+
+.banner{
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+}
+
+.main-nav{
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.logo img{
+    width: 200px;
+}
+
+.links{
+    flex-basis: 730px;
+}
+
+.links ul{
+    justify-content: flex end;
+    gap: 40px;
+}
+
+.header{
+    padding: 50px var(--padding-inline-section) 0;
+}
+
+.hero-section{
+   justify-content: center;
+    gap: 50px;
+}
+
+.header-rigth img{
+    height: 600px;
+}
+
