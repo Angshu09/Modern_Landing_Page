@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
 </head>
 <body>
     
@@ -17,16 +18,17 @@
     <nav>
         <div class="container main-nav flex">
             <a  href="#" class="logo"><img src="resources/logo.png" alt="company logo"></a>
-            <div class="links">
+            <div class="links" id="nav-links">
                 <ul class="flex">
                     <li><a href="#" class="hover-link">Products</a></li>
                     <li><a href="#" class="hover-link">Customers</a></li>
                     <li><a href="#" class="hover-link">Pricing</a></li>
                     <li><a href="#" class="hover-link">Resources</a></li>
                     <li><a href="#" class="hover-link secondary-button">Sign In</a></li>
-                    <li><a href="#" class="hover-lin primary-button">Sign Up</a></li>
+                    <li><a href="#" class="hover-lin primary-button nav-primary-button">Sign Up</a></li>
                 </ul>
             </div>
+            <a href="#" class="nav-toggle hover-link" id="nav-toggle"><i class="fa-solid fa-bars"></i></a>
         </div>
     </nav>
 
@@ -126,7 +128,7 @@
     </div>
 
     <div class="big-feature-section">
-        <div class="container flex big-feature-container">
+        <div class="container flex big-feature-container feature-media">
             <div class="big-feature-para flex">
                 <h4>Optimisation for</h4>
                 <h3>Marketers</h3>
@@ -158,7 +160,7 @@
     <div class="example-section">
         <div class="container example-container">
             <div class="example-head">
-                <h2>Your user research Swiss Army knife</h2>
+                <h2>One platforme endless possibilities</h2>
                 <a href="#" class="example-button secondary-button">See all features <i class="fa-solid fa-arrow-right"></i></a>
             </div>
             <div class="example-area flex">
@@ -226,5 +228,15 @@
     </div>
 
     <script src="https://kit.fontawesome.com/2795d8c0e9.js" crossorigin="anonymous"></script>
+
+    <script>
+        const toggleButton = document.getElementById('nav-toggle');
+        const navlinks = document.getElementById('nav-links');
+
+        toggleButton.addEventListener('click', () => {
+            navlinks.classList.toggle('active');
+        })
+    </script>
+
 </body>
 </html>

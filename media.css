@@ -1,0 +1,139 @@
+@media screen and (max-width: 1160px){
+    .nav-toggle{
+        display: block;
+        margin-right: 20px;
+    }
+
+    .main-nav{
+        overflow: initial;
+    }
+
+    .links{
+       position: absolute;
+       background-color: white;
+       left: -100%;
+       top: 100%;
+       width: 100%;
+       padding-block: 20px; 
+       transition: 0.2s ease-in-out;
+    }
+
+   
+    .links.active{
+        left: 0;
+    }
+
+    .links ul{
+        flex-direction: column;
+    }
+
+    .nav-primary-button{
+        width: auto !important;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .example-card{
+        width: calc(50% - 10px);
+        height: 190px;
+    }
+
+    .example-area{
+        gap: 20px;
+    }
+
+    .cta-section{
+        padding-block: 80px;
+    }
+
+    .feature-card{
+        min-width: calc(50% - 10px);
+    }
+}
+
+@media screen and (max-width: 980px){
+    
+h1{
+    font-size: 2rem;
+}
+}
+
+@media screen and (max-width: 800px){
+    .hero-section{
+        flex-direction: column-reverse;
+    }
+
+    .header-left{
+        width: 100%;
+        text-align: center;
+    }
+
+    .primary-button{
+        width: 100%;
+        padding-inline: 0;
+    }
+
+    .big-feature-section{
+        padding-top: 50px ;
+    }
+
+    .big-feature-container{
+        flex-direction: column;
+    }
+
+    .feature-media{
+        flex-direction: column-reverse;
+    }
+
+    .footer-container{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .foot-links{
+       align-items: center;
+       justify-content: center;
+       gap: 10px;
+    }
+}
+
+@media screen and (max-width: 660px){
+    .feature-card{
+        min-width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 560px){
+    :root{
+        --padding-inline-section: 10px;
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+    
+    h3{
+        font-size: 1.5rem;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+
+    .example-card{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 370px){
+    h1{
+        font-size: 1.5rem;
+    }
+
+    .logo img{
+        width: 150px ;
+    }
+}
+
+
