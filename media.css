@@ -29,6 +29,7 @@
 
     .nav-primary-button{
         width: auto !important;
+        padding-inline: 25px !important;
     }
 }
 
